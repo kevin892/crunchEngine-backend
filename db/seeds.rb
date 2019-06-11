@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# kev1 = User.create(email: "kevinbruggiero@gmail.com", password: "12345")
+kevin = User.create(email: "kevinbruggiero@gmail.com", password: "kevin811")
 
-something = Gif.create(user_id: 2, url: 'www.google.com')
+# something = Gif.create(user_id: 2, url: 'www.google.com')
 
 # snails = SearchTerm.create(user: kev1, search: "Snails")
 #
