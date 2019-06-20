@@ -13,12 +13,11 @@
      @user.name = params["username"]
      @user.password = params["password"]
      @user.email = params["email"]
-
-       if @user.save
+       if @user.valid?
+         @user.save
         render json: @user
        else
-         format.html { render :new }
-         format.json { render json: @user.errors, status: :unprocessable_entity }
+        render json: @user.errors, status: :unprocessable_entity 
      end
    end
 end
